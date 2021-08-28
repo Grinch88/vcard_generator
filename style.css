@@ -1,0 +1,36 @@
+body {
+    background: #ffffff;
+}
+.div-main {
+    border: solid 0px #000000;
+    position: relative;
+    display: block;
+    margin: 50 auto;
+}
+.div-input {
+    border: solid 0px #000000;
+    position: relative;
+    text-align: center;
+    width: 310px;
+    display: block;
+    margin: 0 auto;
+}
+.div-result {
+    border: solid 0px #000000;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+input {
+    margin: 2 3px;
+}
+p {
+    border: solid 0px #000000;
+    font-family: comic sans ms;
+    font-size: 32;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    margin: 0 10;
+}
