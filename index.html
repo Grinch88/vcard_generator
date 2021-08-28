@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>-= Generate Card =-</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+        <script src="jquery-qrcode.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#button').click(function(){
+                    $('#result > img').remove();
+                    $('#result').qrcode({
+                        text:'tel:'+$('#input').val(),
+                        label:$('#input').val()
+                    });
+                });
+                $('#result').click(function(){
+                    $('form').toggle(100);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="div-main">
+            <div class="div-input">
+                <form>
+                    Номер телефона:
+                    <input id="input"><br>
+                    <input id="button" type="button" value="Отправить">
+                    <input id="reset" type="reset">
+                </form>
+            </div>
+            <div class="div-result" id="result"></div>
+        </div>
+    </body>
+</html>
